@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage[a4paper, total={6in, 10in}]{geometry}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath, amsfonts}
+\usepackage{graphicx}
+\usepackage{svg}
+
+\title{Contest}
+\author{Tradingene }
+\date{May 2018}
+
+\begin{document}
+
+\maketitle
+
+Зайка следил за ценами на некоторый инструмент в течение 1000 моментов времени и получил следующий график:
+
+\begin{figure}[htbp]
+\hspace*{0.2cm}                                                           
+   \includesvg[scale=0.9]{prices.svg}
+
+  \caption{График цен на некоторый инструмент}
+  \label{fig:Prob1:MEA}
+\end{figure}
+
+Он даёт вам задание совершить в момент времени $t = 1000$ сделку по цене $P_{1000} = 1018.14$. Вам необходимо максимизировать прибыльность сделки, закрыв её по цене $P_t, t > 1000$, получив прибыль $r = P_t - P_{1000}$. При этом, если сделка не будет закрыта до момента $t = 1100$, то Зайка потребует от вас закрыть её, несмотря на прибыльность.
+
+Оцените выигрыш, который Зайка может получить при таких условиях.
+
+\end{document}
